@@ -431,6 +431,66 @@
       </section>
     </main>
 
+    <!-- !MODALWINDOW -->
+    <div class="modal-overlay is-open">
+      <div class="modal">
+        <button type="button" class="exit-button button">
+          <svg class="modal-icon icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="contact-form">
+          <ul class="list form-list">
+            <li class="form-list-item">
+              <label class="contact-form-label" for="user-name">Name</label>
+              <input type="text" id="user-name" name="user-name" required />
+            </li>
+            <li class="form-list-item">
+              <label class="contact-form-label" for="user-tel">Phone</label>
+              <input type="tel" id="user-tel" name="user-tel" required />
+            </li>
+            <li class="form-list-item">
+              <label class="contact-form-label" for="user-email">Email</label>
+              <input type="email" id="user-email" name="user-email" required />
+            </li>
+            <li class="form-list-item">
+              <label class="contact-form-label" for="user-comment"
+                >Comment</label
+              >
+              <textarea
+                class="form-textarea"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </li>
+          </ul>
+
+          <div class="checkbox-container">
+            <input
+              class="form-privacy-checkbox visually-hidden"
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              value="true"
+            />
+            <label class="privacy-checkbox-label" for="privacy"
+              ><span class="privacy-checkbox">
+                <svg class="modal-form-icon icon-mark" width="8" height="8">
+                  <use href="./images/icons.svg#icon-mark"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a class="privacy-link" href="">Privacy Policy</a></label
+            >
+          </div>
+
+          <button class="button button-form" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- !/MODALWINDOW -->
+
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-main-container container">
