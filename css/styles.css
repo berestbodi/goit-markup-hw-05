@@ -481,6 +481,10 @@ button {
   margin-right: 80px;
 }
 
+.footer-form-container {
+  flex: 1;
+}
+
 .footer-form {
   display: flex;
   flex-direction: row;
